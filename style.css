@@ -1,0 +1,281 @@
+
+/* Fondo de la página web */
+body {
+    background-color: #FEFEFE;
+}
+/* ---------------------------------- Inicio Responsive Tablet ---------------------------- */
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    #grilla {
+        grid-template-areas: 
+        "header"
+        "CuadroInformacionGeneral"
+        "CuadroRelaciones CuadroInfluencia"
+        "CuadroEjecucion CuadroEstrategia"
+        "CajaBase"
+        "footer"
+    }
+    main {
+        background-color: hotpink;
+    }     
+}
+
+/* ---------------------------------- Inicio Responsive mobile ---------------------------- */
+
+@media screen and (max-width: 991px) {
+    h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
+    line-height: 60px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #grilla {
+        grid-template-areas: 
+        "header"
+        "CuadroInformacionGeneral"
+        "CuadroRelaciones"
+        "CuadroInfluencia"
+        "CuadroEjecucion "
+        "CuadroEstrategia"
+        "CajaBase"
+        "footer"
+    }
+    main {
+        background-color: rgb(153, 255, 105);
+    }
+
+    /* ---------------------------------- Inicio Menu deplegable ---------------------------- */
+
+}
+#menu{
+    float: left;
+    width: 100x;
+}
+ul{
+    list-style: none;
+}
+.nav li a {
+    background-color:#A7D6D0;
+    color: grey;
+    border: none;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+.nav > li {
+    float: left;
+}
+
+.nav li a:hover {
+    background-color: #434343;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li{
+    position: relative;
+}
+
+.nav li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+/* ---------------------------------- FIN Menu deplegable ---------------------------- */
+
+/* ---------------------------------- INICIO Grilla ---------------------------- */
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "CuadroInformacionGeneral CuadroInformacionGeneral CuadroRelaciones"
+    "CuadroInfluencia CuadroEjecucion CuadroEstrategia"
+    "CajaBase CajaBase CajaBase"
+    "footer footer footer";
+    grid-template-columns: 3 33% 33% 33%;
+    grid-template-rows: 5 20% 30% 30% 10% 10%;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 30px 110px 30px 110px;
+}
+header{
+    grid-area: header;
+}
+
+#CuadroInformacionGeneral{
+    grid-area: CuadroInformacionGeneral;
+}
+
+#CuadroRelaciones{
+    grid-area: CuadroRelaciones;
+}
+
+#CuadroInfluencia{
+    grid-area: CuadroInfluencia;
+}
+
+#CuadroEjecucion{
+    grid-area: CuadroEjecucion;
+}
+#CuadroEstrategia{
+    grid-area: CuadroEstrategia;
+}
+#CajaBase{
+    grid-area: CajaBase;
+}
+footer{
+    grid-area: footer;
+}
+/* ---------------------------------- FIN Grilla ---------------------------- */
+
+/* ---------------INICIO Formato de colores, fuentes y tamallos para cuadros fortalezas (Index)------------ */
+
+/* Título */
+
+h1{
+    color: rgb(9, 78, 55);
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0px;
+}
+
+h2{
+    color:grey;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;   
+}
+/* Clase para Cuadro Información General*/
+#CuadroInformacionGeneral {
+    background-color: #68a5c4;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+} 
+
+/* Clase para Cuadro Relaciones*/
+#CuadroRelaciones{
+    background-color: #EFEDED;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+
+}
+
+/* Clase para Cuadro Ejecución*/
+#CuadroEjecucion {
+    background-color:#A7D6D0;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+
+/* Clase para Cuadro Estrategia*/
+#CuadroEstrategia {
+    background-color: #F5DF9A;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+
+/* Clase para Cuadro Influencia*/
+#CuadroInfluencia {
+    background-color: #E3A86E;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+}
+
+/*Subtitulos en cuadros de dominio */
+.subtitle{
+    color: rgb(9, 78, 55);
+    text-align: left;
+    font-size: 200%;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: normal;
+    text-decoration: none;  
+}
+/* ---------------FIN  Formato de colores, fuentes y tamallos para cuadros de dominio (Index)------------ */
+
+/* Modifica todos los parrafos */
+p{
+    color: rgb(5, 4, 4);
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    letter-spacing: normal;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+/* clase controla todos las imagenes */
+.imagen{
+    height: 60%;
+    width: 50%;
+    justify-content: right;
+}
+/* ID para el Form*/
+#CajaBase{
+    background-color:#e6e6e6;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 30px 20px 30px
+}
+
+/* Etiquetas dentro del Form */
+label{
+    color: rgb(117, 24, 71);
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+/* Lista Detallada de Fortalezas */
+.ListaDetallada {
+    color: rgb(69, 75, 75);
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    letter-spacing: normal;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Lista Ordenada de Fortalezas para HTML  informacion General  */
+.ListaOrdenada {
+    list-style-type: decimal-leading-zero;
+    color: #e9622c;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: normal;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Subtitulos en cada Parrafo */
+.puntos{
+    font-size: 25px;
+    color: rgb(9, 78, 55);
+}
+/* Pie de página */
+footer{
+    color:  rgb(9, 78, 55);
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
